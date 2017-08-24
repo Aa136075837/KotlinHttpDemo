@@ -5,4 +5,5 @@
     <string name="verification_code">Verification Code</string>
     <string name="get_code">Get Code</string>
     <string name="next">Next</string>
+    <string name="register">Register</string>
 </resources>

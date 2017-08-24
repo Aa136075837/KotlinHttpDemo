@@ -7,10 +7,11 @@
     android:orientation="vertical"
     android:padding="10dp"
     tools:context="com.yang.mac.kotlinhttpdemo.ui.RegisterActivity">
+
     <ImageView
         android:layout_width="match_parent"
-        android:background="@color/colorPrimary"
-        android:layout_height="120dp" />
+        android:layout_height="120dp"
+        android:background="@color/colorPrimary" />
 
     <android.support.design.widget.TextInputEditText
         android:id="@+id/act_register_username"
@@ -19,9 +20,9 @@
         android:hint="@string/user_name" />
 
     <LinearLayout
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/act_register_code"
@@ -46,13 +47,28 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        app:sCornersRadius="5dp"
         android:text="@string/next"
+        app:sCornersRadius="5dp"
         app:sGradientCenterColor="@color/colorPrimary"
         app:sGradientEndColor="@color/line"
         app:sGradientStartColor="@color/colorAccent"
         app:sStrokeColor="@color/colorAccent"
         app:sStrokeWidth="2dp"
         app:sUseSelector="true" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/act_register_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:hint="@string/pass_word" />
+
+    <com.allen.library.SuperButton
+        android:visibility="gone"
+        android:text="@string/register"
+        android:id="@+id/act_register"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
 
 </LinearLayout>
