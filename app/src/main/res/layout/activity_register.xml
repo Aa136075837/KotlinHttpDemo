@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.yang.mac.kotlinhttpdemo.ui.RegisterActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="120dp" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/act_register_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/user_name" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/act_register_code"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:hint="@string/verification_code" />
+
+        <Button
+            android:id="@+id/act_register_get_code"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/code_btn_bg"
+            android:text="@string/get_code"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <com.allen.library.SuperButton
+        android:id="@+id/act0_register_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:sCornersRadius="5dp"
+        android:text="@string/next"
+        app:sGradientCenterColor="@color/colorPrimary"
+        app:sGradientEndColor="@color/line"
+        app:sGradientStartColor="@color/colorAccent"
+        app:sStrokeColor="@color/colorAccent"
+        app:sStrokeWidth="2dp"
+        app:sUseSelector="true" />
+
+</LinearLayout>
