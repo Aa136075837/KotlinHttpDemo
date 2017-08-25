@@ -9,9 +9,9 @@ import android.os.Handler
  */
 class MacApplication : Application() {
     companion object {
-        public var mContext: Context = null!!
+        lateinit var mContext: Context
 
-        public var mHandler: Handler = null!!
+        lateinit var mHandler: Handler
     }
 
     override fun onCreate() {
