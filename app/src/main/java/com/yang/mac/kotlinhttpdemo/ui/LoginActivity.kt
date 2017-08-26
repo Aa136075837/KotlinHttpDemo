@@ -10,11 +10,6 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        initViews()
     }
 
-    private fun initViews() {
-        val editUserName = findViewById<TextInputEditText>(R.id.user_name)
-        val editPassWord = findViewById<TextInputEditText>(R.id.pass_word)
-    }
 }
